@@ -1,0 +1,42 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type:  application/json 
+
+{
+    "name": "ortega",
+    "age": 50,
+    "email": "ortega@example.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/655825dc02a0c56ea653033a HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/655825dc02a0c56ea653033a HTTP/1.1
+Content-Type:  application/json 
+
+{
+    "name": "flores",
+    "age": 70,
+    "email": "flores@example.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/655825dc02a0c56ea653033a HTTP/1.1
+
+###
+POST http://localhost:9000/api/usuarioconsultorios HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "jeny",
+    "apellido": "Rios",
+    "email": "jeny@ejemplo.com",
+    "contraseña": "brenda123"
+}
+
+
+
